@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Rubik:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(231, 244, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    position: sticky;
+    top: 0px;
+    box-shadow: 5px 5px 7px rgba(196, 196, 196, 0.636);
+}
+nav a{
+    text-decoration: none;
+    color: rgb(45, 53, 69);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
+
+#container{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.card{
+    min-width: 230px;
+    min-height: 180px;
+    background-color: rgb(247, 249, 255);
+    box-shadow: 2px 2px 5px rgba(197, 197, 197, 0.745);
+    padding: 15px;
+    border-radius: 4px;
+    margin: 20px 3%;
+    cursor: pointer;
+}
+
+hr{
+    width: 95%;
+    border:1px solid rgb(0, 72, 255);
+    align-self: center;
+}
+
+span{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px;
+    border:none;
+    color: rgb(247, 251, 255);
+    border-radius: 4px;
+}
+#id{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 5px;
+}
+.up{
+    display: flex;
+    padding-left: 5px;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.date{
+    font-size: 9px;
+    font-weight: 600;
+    min-width: 50%;
+    padding-bottom: 10px;
+}
+.down{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0px 2px 0px;
+}
+.fair{
+    font-size: 12px;
+    align-self: flex-end;
+    font-weight: 600;
+}
+.toLocation{
+    font-size: 14px;
+    font-weight: 600;
+}
+.fromLocation{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+
+
+@media  screen and (min-width :1250px) {
+    #container{
+        padding-top: 30px;
+    }
+    .card{
+        width: 23%;
+        margin: 20px 3%;
+        
+    }
+    
+}
+
+@media  screen and (max-width :1250px) {
+    #container{
+        padding: 20px;
+    }
+    .card{
+        width: 25%;
+        margin: 20px 3%;
+        
+    }
+    
+}
+
+@media  screen and (max-width :900px) {
+    #container{
+        padding: 5px;
+    }
+    .card{
+        width: 40%;
+        margin: 20px 3%;
+        
+    }
+    
+}
+
+@media screen and (max-width :600px) {
+    #container{
+  
+        padding: 15px;
+      
+      
+    }
+    .card{
+        width: 80%;
+      
+        
+    }
+}
+
