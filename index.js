@@ -29,7 +29,7 @@ function renderUi(data){
             // randerAuction(item)
             let a = document.createElement("a");
             a.href=`./auction.html`
-            document.cookie =`caseNumber=${caseNumber}; path=/auction.html`
+             localStorage.setItem("caseNumber", caseNumber);
             a.click();
 
         }
