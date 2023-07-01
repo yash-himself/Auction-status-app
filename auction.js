@@ -2,7 +2,7 @@
 let cookie = document.cookie
 const box =document.getElementById("box");
 let caseNumber=localStorage.getItem("caseNumber").split("=");
-let caseIs =caseNumber[1];
+let caseIs =caseNumber;
 
 const api = `https://gauravgitacc.github.io/postAppData/auctionData.json`
 
